@@ -63,7 +63,7 @@ php artisan serve
 
 The default SuperAdmin account is created by the database seeder.
 
-Email: superadmin@example.com
+Email: superadmin@gmail.com
 Password: superadmin@123
 
 ## Authentication
