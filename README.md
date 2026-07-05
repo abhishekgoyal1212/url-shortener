@@ -61,6 +61,11 @@ php artisan migrate --seed
 php artisan serve
 ```
 
+The default SuperAdmin account is created by the database seeder.
+
+Email: superadmin@example.com
+Password: superadmin@123
+
 ## Authentication
 
 * Laravel Authentication
