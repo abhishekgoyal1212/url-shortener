@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
 
-Route::middleware(['guest','nocache'])->group(function () {
+Route::middleware(['guest.redirect','nocache'])->group(function () {
 
     Route::get('/login', [AuthController::class, 'index'])->name('login');
 

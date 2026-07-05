@@ -14,6 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'nocache' => \App\Http\Middleware\NoCacheMiddleware::class,
             'role' => \App\Http\Middleware\RoleMiddleware::class,
+            'guest.redirect' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
